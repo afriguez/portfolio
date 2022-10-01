@@ -30,7 +30,7 @@ export const Projects = () => {
         />
         <RepoCard
           title="Distropia/Ei"
-          desc="Responsive & stateful frontend on NextJS"
+          desc="Responsive & stateful frontend"
           color="#3178C6"
           lang="TypeScript"
           url="https://github.com/phelferick/ei"
