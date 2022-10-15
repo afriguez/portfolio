@@ -38,6 +38,16 @@ export const TopBar = () => {
           <TwitterIcon />
         </a>
       </div>
+      <div className="flex justify-center items-center gap-5">
+		<a href="https://blog.afriguez.com" className="text-secondary hover:text-gray">
+          <p className="text-[2rem] font-bold">Blog</p>
+        </a>
+        <img
+          src="https://github.com/afriguez.png"
+          alt="blog"
+          className="h-[3.5rem] w-[3.5rem] rounded-lg"
+        />
+      </div>
     </div>
   );
 };
