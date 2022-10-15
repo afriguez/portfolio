@@ -1,0 +1,18 @@
+[build]
+  base = "."
+
+  command = "npm run build"
+
+  publish = "build"
+
+[[redirects]]
+  from = "/github"
+  to = "https://github.com/afriguez"
+
+[[redirects]]
+  from = "/blog"
+  to = "https://blog.afriguez.com"
+
+[[redirects]]
+  from = "/news"
+  to = "https://blog.afriguez.com"
