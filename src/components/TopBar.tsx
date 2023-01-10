@@ -7,7 +7,7 @@ import {
 
 export const TopBar = () => {
   return (
-    <div className="flex flex-wrap items-center justify-center bg-primary py-5 px-10 shadow-md shadow-[#1F1F1F] sm:justify-between md:px-20">
+    <div className="flex flex-wrap items-center justify-center bg-primary py-5 px-10 shadow-md shadow-[#000000] sm:justify-between md:px-20">
       <div className="flex w-[12.5rem] justify-around">
         <a
           href="https://discord.com/users/361159575036231691"
