@@ -1,7 +1,7 @@
 import {
   ElixirIcon,
-  GraphqlIcon,
   ReactIcon,
+  RedisIcon,
   TypescriptIcon,
 } from "./Icons";
 import { TechCard } from "./TechCard";
@@ -24,11 +24,11 @@ export const TechStack = () => {
         url="https://www.typescriptlang.org/"
       />
       <TechCard
-        name="GraphQL"
-        desc="Query language for APIs"
-        color="#E10098"
-        icon={<GraphqlIcon />}
-        url="https://graphql.org/"
+        name="Redis"
+        desc="In-memory data store"
+        color="#D82C20"
+        icon={<RedisIcon />}
+        url="https://redis.io"
       />
 
       <TechCard
