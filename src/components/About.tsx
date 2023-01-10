@@ -7,7 +7,7 @@ export const About = () => {
         Fer L. 18 years old. &ensp;&ensp;&ensp;
         <span className="text-[0.75rem] font-bold">Español & English</span>
         <br />
-        Self-taught software & web developer.
+        Software & web developer.
         <br />
         <br />
         Docker, Linux & Realtime systems.
