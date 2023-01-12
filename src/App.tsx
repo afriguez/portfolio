@@ -1,4 +1,4 @@
-import { useLanyardWs } from "use-lanyard";
+import { useLanyardWS } from "use-lanyard";
 import { About } from "./components/About";
 import { Background } from "./components/Background";
 import { Discord } from "./components/Discord";
@@ -9,7 +9,7 @@ import { TopBar } from "./components/TopBar";
 const DISCORD_ID = "361159575036231691";
 
 export const App = () => {
-  const lanyard = useLanyardWs(DISCORD_ID);
+  const lanyard = useLanyardWS(DISCORD_ID);
 
   return (
     <>
