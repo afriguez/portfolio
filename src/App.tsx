@@ -13,7 +13,7 @@ export const App = () => {
 
   return (
       <div className="flex h-screen flex-col justify-between">
-        <TopBar />
+		  <TopBar discordUser={lanyard?.discord_user}/>
         <div className="md:px-30 primary flex flex-wrap justify-around px-10 py-10">
           <About />
           <div className="flex flex-col items-center justify-center">
