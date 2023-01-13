@@ -12,8 +12,6 @@ export const App = () => {
   const lanyard = useLanyardWS(DISCORD_ID);
 
   return (
-    <>
-      <Background />
       <div className="flex h-screen flex-col justify-between">
         <TopBar />
         <div className="md:px-30 primary flex flex-wrap justify-around px-10 py-10">
@@ -24,7 +22,7 @@ export const App = () => {
           </div>
         </div>
         <Footer spotify={lanyard?.spotify} />
+      <Background />
       </div>
-    </>
   );
 };
