@@ -15,11 +15,11 @@ export const Projects = () => {
           url="https://github.com/afriguez/portfolio"
         />
         <RepoCard
-          title="ShuxBot"
+          title="Shux"
           desc="ShuxTeam Discord Bot"
-          color="#3178C6"
-          lang="TypeScript"
-          url="https://github.com/afriguez/shuxbot"
+          color="#462359"
+          lang="Elixir"
+          url="https://github.com/afriguez/shux"
         />
         <RepoCard
           title="Distropia/Yae"
