@@ -15,17 +15,17 @@ export const Spotify = ({
 				<img
 					src={spotify.album_art_url ? spotify.album_art_url : ""}
 					alt="activity"
-					className="mr-3 h-[5.5rem] w-[5.5rem] rounded-lg transition duration-500 transform hover:-scale-x-100"
+					className="mr-3 h-[5.5rem] min-w-[5.5rem] rounded-lg transition duration-500 transform hover:-scale-x-100"
 				/>
 			</a>
 
-			<div className="flex flex-col truncate text-secondary">
+			<div className="flex flex-col overflow-hidden text-secondary">
 				<p className="text-[0.9rem] font-bold text-[#1ed760]">
 					Listening to spotify...
 				</p>
-				<p className="text-[0.8rem] font-bold">{spotify.song}</p>
-				<p className="text-[0.8rem]">by {spotify.artist}</p>
-				<p className="text-[0.8rem]">on {spotify.album}</p>
+				<p className="text-[0.8rem] truncate font-bold">{spotify.song}</p>
+				<p className="text-[0.8rem] truncate">by {spotify.artist}</p>
+				<p className="text-[0.8rem] truncate">on {spotify.album}</p>
 			</div>
 		</div>
 	) : (
