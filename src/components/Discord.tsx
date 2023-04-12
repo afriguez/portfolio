@@ -14,10 +14,10 @@ export const Discord = ({
     lanyard && lanyard.discord_status === "online"
       ? ["#43B581", "#2E8D62"]
       : lanyard && lanyard.discord_status === "idle"
-      ? ["#FAA61A", "#B57B1B"]
-      : lanyard && lanyard.discord_status === "dnd"
-      ? ["#F04747", "#A32323"]
-      : ["#565656", "#3F3F3F"];
+        ? ["#FAA61A", "#B57B1B"]
+        : lanyard && lanyard.discord_status === "dnd"
+          ? ["#F04747", "#A32323"]
+          : ["#565656", "#3F3F3F"];
 
   const [style, setStyle] = useState({});
 
@@ -59,7 +59,7 @@ export const Discord = ({
         >
           {lanyard
             ? lanyard.discord_status.charAt(0).toUpperCase() +
-              lanyard.discord_status.slice(1)
+            lanyard.discord_status.slice(1)
             : "offline"}{" "}
           on Discord
         </div>
@@ -73,9 +73,9 @@ export const Discord = ({
                   "mp:external"
                 )
                   ? mainActivity.assets.large_image.replace(
-                      /mp:external\/([^]*)\/(http[s])/g,
-                      "$2:/"
-                    )
+                    /mp:external\/([^]*)\/(http[s])/g,
+                    "$2:/"
+                  )
                   : `https://cdn.discordapp.com/app-assets/${mainActivity.application_id}/${mainActivity.assets?.large_image}.webp`
               }
               alt="activity"

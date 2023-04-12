@@ -6,7 +6,7 @@ import {
   TwitterIcon,
 } from "./Icons";
 
-export const TopBar = ({discordUser}: {discordUser: DiscordUser | undefined}) => {
+export const TopBar = ({ discordUser }: { discordUser: DiscordUser | undefined }) => {
   return (
     <div className="flex flex-wrap items-center justify-center bg-primary py-5 px-10 shadow-md shadow-[#000000] flex-col sm:flex-row sm:justify-between md:px-20">
       <div className="flex w-[12.5rem] justify-around">
