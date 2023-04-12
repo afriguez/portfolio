@@ -26,7 +26,7 @@ export const Discord = ({
       backgroundColor: statusColor,
       boxShadow: `0rem 0.3rem ${statusSubColor}`,
     });
-  }, [statusColor]);
+  }, [statusColor, statusSubColor]);
 
   return (
     <div className="flex flex-col items-center">
