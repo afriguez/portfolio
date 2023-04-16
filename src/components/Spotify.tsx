@@ -7,7 +7,7 @@ export const Spotify = ({
 }) => {
 	return spotify ? (
 		<div
-			className="flex h-[8rem] max-w-[25rem] items-center justify-center rounded-lg bg-[#1F1F1F] p-5">
+      className="flex h-[8rem] max-w-[90%] sm:max-w-[25rem] items-center justify-center rounded-lg bg-[#1F1F1F] p-5">
 			<a
 				href={`https://open.spotify.com/track/${spotify.track_id}`}
 				rel="noopener noreferrer"
