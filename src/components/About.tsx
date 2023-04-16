@@ -4,7 +4,7 @@ export const About = () => {
   return (
     <div className="text-secondary">
       <p>
-        Fer L. 18 years old. &ensp;&ensp;&ensp;
+        Fer L. 19 years old. &ensp;&ensp;&ensp;
         <span className="text-[0.75rem] font-bold">Español & English</span>
         <br />
         Software & web developer.
