@@ -7,7 +7,7 @@ export const Discord = ({
   lanyard: Data | undefined;
 }) => {
   const mainActivity = lanyard?.activities.find(
-    (activity) => activity.type === 0
+    (activity) => activity.type === 0 && activity.name != "YouTube Music"
   );
 
   const [statusColor, statusSubColor] =

@@ -21,7 +21,7 @@ export const App = () => {
           <Projects />
         </div>
       </div>
-      <Footer spotify={lanyard?.spotify} />
+      <Footer lanyard={lanyard} />
       <Background />
     </div>
   );

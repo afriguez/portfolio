@@ -1,14 +1,19 @@
-import { Spotify as LanyardSpotify } from "use-lanyard";
+import { Data, Spotify as LanyardSpotify } from "use-lanyard";
 import { Spotify } from "./Spotify";
+import { YoutubeMusic } from "./YoutubeMusic";
 
 export const Footer = ({
-  spotify,
+  lanyard,
 }: {
-  spotify: LanyardSpotify | undefined | null;
+  lanyard: Data | undefined
 }) => {
   return (
     <footer className="flex flex-wrap items-center justify-center py-3 px-10 lg:justify-between md:px-20">
-      <Spotify spotify={spotify} />
+      {lanyard?.spotify ? (
+        <Spotify spotify={lanyard?.spotify} />
+      ) :
+        <YoutubeMusic lanyard={lanyard} />
+      }
       <p className="mt-5 text-[0.9rem] text-secondary text-center sm:mt-0 px-4 md:p-0">
         Copyright &copy; afriguez {new Date().getFullYear()}. All rights reserved
       </p>
