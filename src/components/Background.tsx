@@ -16,13 +16,13 @@ export const Background = () => {
         },
         background: {
           color: {
-            value: "#191919",
+            value: "#000000",
           },
         },
         fpsLimit: 60,
         particles: {
           color: {
-            value: "#777777",
+            value: "#ffffff",
           },
           collisions: {
             enable: true,
@@ -42,7 +42,7 @@ export const Background = () => {
               enable: true,
               area: 4000,
             },
-            value: 80,
+            value: 200,
           },
           opacity: {
             value: 0.5,
@@ -51,7 +51,7 @@ export const Background = () => {
             type: "circle",
           },
           size: {
-            value: { min: 1, max: 7 },
+            value: { min: 0.3, max: 4 },
           },
         },
         detectRetina: true,
