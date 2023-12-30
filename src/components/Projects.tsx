@@ -15,7 +15,7 @@ export const Projects = () => {
           url="https://github.com/afriguez/portfolio"
         />
         <RepoCard
-          title="Shux"
+          title="Shuxbot/shux"
           desc="ShuxTeam Discord Bot"
           color="#462359"
           lang="Elixir"
@@ -29,11 +29,11 @@ export const Projects = () => {
           url="https://github.com/phelferick/yae"
         />
         <RepoCard
-          title="Distropia/Ei"
-          desc="Responsive & stateful frontend"
-          color="#3178C6"
-          lang="TypeScript"
-          url="https://github.com/phelferick/ei"
+          title="Waledii/maerts-web"
+          desc="Maerts web client"
+          color="#ff5a03"
+          lang="Astro"
+          url="https://github.com/Waledii/maerts-web"
         />
       </div>
     </div>
