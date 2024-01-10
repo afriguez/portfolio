@@ -67,6 +67,7 @@ export const Discord = ({
       <div className="my-5 flex h-[9.37rem] min-w-[18.75rem] px-5 items-center justify-center rounded-lg bg-[#1F1F1F]">
         {mainActivity ? (
           <div className="flex flex-row items-center">
+            {mainActivity.assets && mainActivity.assets.large_image ? (
             <img
               src={
                 mainActivity.assets?.large_image.startsWith(
@@ -77,10 +78,11 @@ export const Discord = ({
                     "$2:/"
                   )
                   : `https://cdn.discordapp.com/app-assets/${mainActivity.application_id}/${mainActivity.assets?.large_image}.webp`
-              }
-              alt="activity"
-              className="mr-3 h-[5rem] w-[5rem] rounded-lg"
-            />
+                }
+                alt="activity"
+                className="mr-3 h-[5rem] w-[5rem] rounded-lg"
+              />
+            ) : (<></>)}
             <div className="flex flex-col truncate">
               <p className="text-[0.8rem] font-bold text-secondary">
                 {mainActivity.name}
