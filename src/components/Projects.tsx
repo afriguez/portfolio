@@ -22,11 +22,11 @@ export const Projects = () => {
           url="https://github.com/afriguez/shux"
         />
         <RepoCard
-          title="Distropia/Yae"
-          desc="Realtime graphql & elixir backend"
+          title="Api"
+          desc="Personal API"
           color="#462359"
           lang="Elixir"
-          url="https://github.com/phelferick/yae"
+          url="https://github.com/afriguez/api"
         />
         <RepoCard
           title="Waledii/maerts-web"
