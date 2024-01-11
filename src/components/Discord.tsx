@@ -25,15 +25,16 @@ export const Discord = ({
   const fetchCover = (game: string) => {
     fetch(`https://api.afriguez.com/v1/games/cover/${game}`).then((res) =>
       res.json().then((json) => {
-        if (json.success) {
-          setCover(json.data.url)
-        }
+        json.success
+          ? setCover(json.data.url)
+          : setCover("//github.com/afriguez.png")
       })
     )
   }
 
   useEffect(() => {
     if (mainActivity && (!mainActivity.assets || !mainActivity.assets.large_image)) {
+      console.log('cambio')
       fetchCover(mainActivity.name);
     }
 
