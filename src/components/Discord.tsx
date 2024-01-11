@@ -34,7 +34,6 @@ export const Discord = ({
 
   useEffect(() => {
     if (mainActivity && (!mainActivity.assets || !mainActivity.assets.large_image)) {
-      console.log('cambio')
       fetchCover(mainActivity.name);
     }
 
