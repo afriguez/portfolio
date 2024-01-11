@@ -33,12 +33,7 @@ export const Discord = ({
   }
 
   useEffect(() => {
-    if (
-      !cover &&
-      mainActivity &&
-      mainActivity.assets &&
-      !mainActivity.assets.large_image
-    ) {
+    if (mainActivity && (!mainActivity.assets || !mainActivity.assets.large_image)) {
       fetchCover(mainActivity.name);
     }
 
@@ -46,7 +41,7 @@ export const Discord = ({
       backgroundColor: statusColor,
       boxShadow: `0rem 0.3rem ${statusSubColor}`,
     });
-  }, [statusColor, statusSubColor, cover, mainActivity]);
+  }, [statusColor, statusSubColor, mainActivity]);
 
   return (
     <div className="flex flex-col items-center">
