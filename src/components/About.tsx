@@ -7,7 +7,7 @@ export const About = () => {
   const [stacks, setStacks] = useState<Array<string | number>>([])
 
   const fetchStacks = () => {
-    fetch("http://api.afriguez.com/v1/about/stacks").then((res) =>
+    fetch("https://api.afriguez.com/v1/about/stacks").then((res) =>
       res.json().then((json) => {
         json.success
           ? setStacks(formatStacks(json.data.stacks))
