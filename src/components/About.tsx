@@ -40,7 +40,7 @@ export const About = () => {
     <div className="text-secondary">
       <div className="w-[350px]">
         <p>
-          Fer L. 19 years old. &ensp;&ensp;&ensp;
+          Fer L. 20 years old. &ensp;&ensp;&ensp;
           <span className="text-[0.75rem] font-bold">Español & English</span>
           <br />
           Software & web developer.
