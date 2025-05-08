@@ -6,7 +6,7 @@ export const YoutubeMusic = ({
   lanyard: Data | undefined;
 }) => {
   const ytMusic = lanyard?.activities.find(
-    (activity) => activity.type === 0 && activity.name === "YouTube Music"
+    (activity) => activity.type === 2 && activity.name === "YouTube Music"
   )
 
   return ytMusic ? (
@@ -17,14 +17,20 @@ export const YoutubeMusic = ({
           ytMusic.assets?.large_image.startsWith(
             "mp:external"
           )
-            ? ytMusic.assets.large_image.replace(
-              /mp:external\/([^]*)\/(http[s])/g,
-              "$2:/"
-            )
+            ? (() => {
+              const url = ytMusic.assets.large_image.replace(
+                /mp:external\/([^]*)\/(http[s])/g,
+                "$2:/"
+              );
+
+              return url.includes("googleusercontent")
+                ? url.split("%")[0]
+                : url;
+            })()
             : `https://cdn.discordapp.com/app-assets/${ytMusic.application_id}/${ytMusic.assets?.large_image}.webp`
         }
-        alt="activity"
-        className="mr-3 h-[5.5rem] min-w-[5.5rem] rounded-lg transition duration-500 transform hover:-scale-x-100"
+        alt="Thumbnail"
+        className="mr-3 h-[5.5rem] min-w-[5.5rem] rounded-lg transition duration-500 transform hover:-scale-x-100 text-center"
       />
 
       <div className="flex flex-col overflow-hidden text-secondary">

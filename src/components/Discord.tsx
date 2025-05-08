@@ -79,7 +79,7 @@ export const Discord = ({
           on Discord
         </div>
       </a>
-      <div className="my-5 flex h-[9.37rem] min-w-[18.75rem] px-5 items-center justify-center rounded-lg bg-[#1F1F1F]">
+      <div className="my-5 flex h-[9.37rem] px-10 sm:min-w-[18.75rem] items-center justify-center rounded-lg bg-[#1F1F1F]">
         {mainActivity ? (
           <div className="flex flex-row items-center">
             <img
@@ -112,7 +112,7 @@ export const Discord = ({
             </div>
           </div>
         ) : (
-          <p className="font-bold text-secondary">
+          <p className="font-bold text-secondary text-center">
             I'm not currently doing anything
           </p>
         )}

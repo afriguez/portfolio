@@ -18,14 +18,15 @@ export const TechCard = ({
   return (
     <div>
       <a href={url} target="_blank" rel="noopener noreferrer">
-        <div className="border-3 flex items-stretch overflow-hidden rounded-lg border border-secondary outline-none transition-all  hover:-translate-y-1 active:translate-y-1">
+        <div className="sm:border-3 flex flex-wrap sm:flex-nowrap items-stretch rounded-lg sm:border border-b-2 border-secondary outline-none transition-all  hover:-translate-y-1 active:translate-y-1">
           <div
-            className="flex items-center justify-center p-5 flex-col"
+            className="flex items-center justify-center flex-col w-full sm:w-auto"
             id={`id-${name}`} data-tooltip-content={name} data-tooltip-variant="dark"
             data-tooltip-float={true}
-            style={{ backgroundColor: color }}
           >
-            <div>{icon}</div>
+            <div className="p-5 rounded-lg" style={{ backgroundColor: color }}>
+              <div>{icon}</div>
+            </div>
           </div>
           <p
             className="mx-[10px] self-center p-2 text-secondary"

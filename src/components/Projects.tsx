@@ -8,13 +8,6 @@ export const Projects = () => {
       </p>
       <div className="grid max-w-[43.75rem] grid-cols-1 gap-5 md:grid-cols-2">
         <RepoCard
-          title="Portfolio"
-          desc="This website"
-          color="#3178C6"
-          lang="TypeScript"
-          url="https://github.com/afriguez/portfolio"
-        />
-        <RepoCard
           title="Shuxbot/shux"
           desc="ShuxTeam Discord Bot"
           color="#462359"
@@ -22,18 +15,25 @@ export const Projects = () => {
           url="https://github.com/afriguez/shux"
         />
         <RepoCard
-          title="Api"
-          desc="Personal API"
-          color="#462359"
-          lang="Elixir"
-          url="https://github.com/afriguez/api"
+          title="Nvim"
+          desc="Personal nvim configuration"
+          color="#000080"
+          lang="Lua"
+          url="https://github.com/afriguez/nvim"
         />
         <RepoCard
-          title="Waledii/maerts-web"
-          desc="Maerts web client"
-          color="#ff5a03"
+          title="Portfolio"
+          desc="This website"
+          color="#3178C6"
+          lang="TypeScript"
+          url="https://github.com/afriguez/portfolio"
+        />
+        <RepoCard
+          title="NixOS Files"
+          desc="NixOS configuration files"
+          color="#7e7eff"
           lang="Astro"
-          url="https://github.com/Waledii/maerts-web"
+          url="https://github.com/afriguez/nixos-files"
         />
       </div>
     </div>

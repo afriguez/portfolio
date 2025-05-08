@@ -8,7 +8,7 @@ import { TechCard } from "./TechCard";
 
 export const TechStack = () => {
   return (
-    <div className="m-[20px] flex gap-[15px] max-w-[500px] flex-col justify-center">
+    <div className="m-[20px] flex gap-[15px] max-w-[600px] flex-col justify-center">
       <TechCard
         name="Elixir"
         desc="Massive scale realtime systems"
@@ -33,7 +33,7 @@ export const TechStack = () => {
 
       <TechCard
         name="React"
-        desc="Build stateless & stateful UIs"
+        desc="Build fast and interactive UIs"
         color="#20232A"
         icon={<ReactIcon />}
         url="https://reactjs.org/"

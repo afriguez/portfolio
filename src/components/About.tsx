@@ -4,17 +4,24 @@ import { TechStack } from "./TechStack";
 
 export const About = () => {
 
-  const [stacks, setStacks] = useState<Array<string | number>>([])
+  const [stacks, setStacks] = useState<Array<string | number>>([
+    "Docker, Linux & Real-time systems.", 4000,
+    "Elixir, Golang, TypeScript, F# & C#.", 4000,
+    "Scalable & highly available real-time systems.", 4000,
+    "PostgreSQL, MongoDB & Redis.", 4000,
+    "Cloud infrastructure with Docker, Linux, Bash & AWS.", 4000,
+    "Phoenix framework, .Net, Flutter, React.", 4000,
+  ])
 
   const fetchStacks = () => {
     fetch("https://api.afriguez.com/v1/about/stacks").then((res) =>
       res.json().then((json) => {
-        json.success
-          ? setStacks(formatStacks(json.data.stacks))
-          : setStacks(["Docker, Linux & Realtime Systems.", 10000])
-      }
-      )
-    )
+        console.log(json.sucess);
+        if (json.success) {
+          setStacks(formatStacks(json.data.stacks));
+        }
+      })
+    );
   }
 
   useEffect(() => {
@@ -38,12 +45,20 @@ export const About = () => {
 
   return (
     <div className="text-secondary">
-      <div className="w-[350px]">
+      <div>
         <p>
-          Fer L. 20 years old. &ensp;&ensp;&ensp;
-          <span className="text-[0.75rem] font-bold">Español & English</span>
+          Fer L. 21 years old. &ensp;&ensp;
+          <span className="text-[0.75rem] font-bold">🗣️ Español & English</span>
           <br />
-          Software & web developer.
+          I like fixing things... and Furina (Not the snake)
+          <br />
+          Working at <a
+            href="https://acacia.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Acacia Dev
+          </a>
           <br />
           <br />
           {stacks.length &&
