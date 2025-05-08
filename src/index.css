@@ -1,7 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #000000;
+  --color-secondary: #FBFFFE;
+  --color-gray: #777777;
+}
+
 * {
   font-family: "Poppins", sans-serif;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

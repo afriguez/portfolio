@@ -1,15 +1,19 @@
-import { useCallback } from "react";
-import Particles from "react-tsparticles";
+import type { Engine } from "@tsparticles/engine";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { useEffect } from "react";
 import { loadFull } from "tsparticles";
+
 export const Background = () => {
-  const particlesInit = useCallback(async (engine: any) => {
-    await loadFull(engine);
-  }, []);
+
+  useEffect(() => {
+    initParticlesEngine(async (e: Engine) => {
+      await loadFull(e);
+    });
+  }, [])
 
   return (
     <Particles
       id="tsparticles"
-      init={particlesInit}
       options={{
         fullScreen: {
           zIndex: -1,
@@ -40,7 +44,6 @@ export const Background = () => {
           number: {
             density: {
               enable: true,
-              area: 4000,
             },
             value: 200,
           },
