@@ -32,7 +32,7 @@ export const Projects = () => {
           title="NixOS Files"
           desc="NixOS configuration files"
           color="#7e7eff"
-          lang="Astro"
+          lang="Nix"
           url="https://github.com/afriguez/nixos-files"
         />
       </div>
