@@ -61,13 +61,13 @@ export const TopBar = ({ discordUser }: { discordUser: DiscordUser | undefined }
         </p>
         {show &&
           <div
-            className="max-w-max text-center min-w-[8.75rem] rounded-lg p-2 px-5 font-bold text-secondary transition-all hover:-translate-y-1 active:translate-y-1"
+            className="max-w-max text-center min-w-[8.75rem] rounded-lg p-2 px-5 font-bold text-secondary transition-all cursor-pointer"
             style={style}
             onMouseEnter={() =>
               setStyle({
                 backgroundColor: colors[colorIdx][0],
                 boxShadow: `0rem 0.5rem ${colors[colorIdx][1]}`,
-                transform: 'translateY(-5px)',
+                transform: 'translateY(-4px)',
               })
             }
             onMouseLeave={() =>
@@ -81,14 +81,14 @@ export const TopBar = ({ discordUser }: { discordUser: DiscordUser | undefined }
               setStyle({
                 backgroundColor: colors[colorIdx][0],
                 boxShadow: `0rem 0rem ${colors[colorIdx][1]}`,
-                transform: 'translateY(5px)',
+                transform: 'translateY(4px)',
               })
             }
             onPointerUp={() =>
               setStyle({
                 backgroundColor: colors[colorIdx][0],
                 boxShadow: `0rem 0.5rem ${colors[colorIdx][1]}`,
-                transform: 'translateY(-5px)',
+                transform: 'translateY(-4px)',
               })
             }
             onClick={() => {
